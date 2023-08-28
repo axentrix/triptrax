@@ -12,10 +12,26 @@
     <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
-    <link rel="icon" type="image/ico" href="favicon.ico">
+    <link rel="icon" type="image/ico" href="icons/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="/css/app.baf2ef6d.css">
+
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+
+
+    <link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+/>
     <script src="https://js.live.net/v7.2/OneDrive.js"></script>
-    <script defer="" src="/js/app.07d66239.js"></script>
-    <link href="/css/app.7264ad64.css" rel="stylesheet">
+    <script defer="" src="/js/669.df9ac17b.js"></script>
+    <script defer="" src="/js/984.3efb9609.js"></script>
+
+
+    
+    
+    <link href="/css/669.c598d5e4.css" rel="stylesheet">
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#027be3">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -28,11 +44,18 @@
     <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#027be3">
     <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
     <meta name="msapplication-TileColor" content="#000000">
-    <link rel="stylesheet" type="text/css" href="/css/853.649f6473.css">
-    <link rel="stylesheet" type="text/css" href="/css/441.34045afc.css">
+  
+    <link rel="stylesheet" type="text/css" href="/css/464.649f6473.css">
 
+    <link rel="stylesheet" type="text/css" href="/css/515.ae0ecb19.css">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900" rel="stylesheet">
     <style>
-.q-page-container{
+    body{
+        font-family:"Inter";
+    }
+.q-page-container-login{
     position:relative;
 display:flex;
 height:100vh;
@@ -42,7 +65,7 @@ justify-content:center;
     background-size:contain;
 }
 
-.q-page-container:after{
+.q-page-container-login:after{
    z-index:0;
     content:"";
     background:rgba(0,0,0,0.44);
@@ -88,71 +111,69 @@ background-color:#00376F;
     <div id="q-app" data-v-app="">
         <div class="q-layout q-layout--standard" tabindex="-1" style="min-height: 527px;"><!----><!---->
            
-            <div class="q-page-container">
-                <main class="q-page ">
-                    <div class="q-pa-md login-form"><!----><div class="d-flex justify-center logo"><img src="images/logo.webp" width="140"></div>
-                        <h2 class="text-h5 text-center">Welcome to TripTrax</h2>
-                        <form class="q-form q-gutter-md"><label
-                                class="q-field row no-wrap items-start q-field--filled q-input q-field--float q-field--labeled q-field--with-bottom"
-                                for="f_2e45d4a0-3986-4633-9b92-d105a45fe371"><!---->
-                                <div class="q-field__inner relative-position col self-stretch">
-                                    <div class="q-field__control relative-position row no-wrap" tabindex="-1">
-                                        <div
-                                            class="q-field__control-container col relative-position row no-wrap q-anchor--skip">
-                                            <input class="q-field__native q-placeholder" tabindex="0"
-                                                aria-label="Username *" id="f_2e45d4a0-3986-4633-9b92-d105a45fe371"
-                                                type="text">
-                                            <div class="q-field__label no-pointer-events absolute ellipsis">Username *
-                                            </div><!---->
-                                        </div>
-                                    </div>
-                                    <div class="q-field__bottom row items-start q-field__bottom--animated">
-                                        <div class="q-field__messages col"></div><!---->
-                                    </div>
-                                </div><!---->
-                            </label><label
-                                class="q-field row no-wrap items-start q-field--filled q-input q-field--float q-field--labeled q-field--with-bottom"
-                                for="f_8b722d04-4296-426e-94a0-066ce62c8697"><!---->
-                                <div class="q-field__inner relative-position col self-stretch">
-                                    <div class="q-field__control relative-position row no-wrap" tabindex="-1">
-                                        <div
-                                            class="q-field__control-container col relative-position row no-wrap q-anchor--skip">
-                                            <input class="q-field__native q-placeholder" tabindex="0"
-                                                aria-label="Password *" autocomplete="current-password"
-                                                id="f_8b722d04-4296-426e-94a0-066ce62c8697" type="password">
-                                            <div class="q-field__label no-pointer-events absolute ellipsis">Password *
-                                            </div><!---->
-                                        </div>
-                                        <div class="q-field__append q-field__marginal row no-wrap items-center"><i
-                                                class="q-icon notranslate material-icons cursor-pointer"
-                                                aria-hidden="true" role="presentation">visibility_off</i></div>
-                                    </div>
-                                    <div class="q-field__bottom row items-start q-field__bottom--animated">
-                                        <div class="q-field__messages col">
-                                            <div>Password with toggle</div>
-                                        </div><!---->
-                                    </div>
-                                </div><!---->
-                            </label>
+            <div class="q-page-container-login">
+                <main class="q-page">
+                    <div class="q-px-lg q-py-xs login-form"><!---->
+                        <div class="d-flex justify-center logo">
+                            <div class="">
+                                <div class=" row flex-center "><img
+                                        src="images/logo.svg" width="100"></div>
+                            </div>
+                        </div>
+                        <div class="text-center q-mt-md trax-heading q-my-xl"> Welcome to TripTrax </div>
+                        
+                        <form class="q-form q-gutter-xs q-mt-sm"><div class="row">
+                            <label class="q-field row no-wrap items-start mdc-text-field mdc-text-field--outlined row">
+                                <span class="mdc-notched-outline">
+                                  <span class="mdc-notched-outline__leading"></span>
+                                  <span class="mdc-notched-outline__notch">
+                                    <span class="mdc-floating-label" id="my-label-id">User</span>
+                                  </span>
+                                  <span class="mdc-notched-outline__trailing"></span>
+                                </span>
+                                <input type="text" class="mdc-text-field__input" aria-labelledby="my-label-id">
+                              </label></div>
+                            <div class="row">
+
+                              <label class="q-field row no-wrap items-start mdc-text-field  mdc-text-field--outlined row">
+                                <span class="mdc-notched-outline">
+                                  <span class="mdc-notched-outline__leading"></span>
+                                  <span class="mdc-notched-outline__notch">
+                                    <span class="mdc-floating-label" id="my-pass-id">Password</span>
+                                  </span>
+                                  <span class="mdc-notched-outline__trailing"></span>
+                                  <i class="q-icon notranslate material-icons cursor-pointer" aria-hidden="true" role="presentation">visibility_off</i>
+                                </span>
+                               
+                                <input type="text" class="mdc-text-field__input" aria-labelledby="my-pass-id">
+                                
+                              </label>
+
+
+
+
+
+                              
+                              
+                            </div>
+                          
+                            <p class="flex justify-end q-mb-lg"><a href="/forgot-password" color="white">Forgot Password?</a></p>
                             <div><button
-                                    class="q-btn q-btn-item non-selectable no-outline q-btn--standard q-btn--rectangle bg-primary text-white q-btn--actionable q-focusable q-hoverable"
-                                    tabindex="0" type="submit"><span class="q-focus-helper"></span><span
+                                    class="q-btn q-btn-item non-selectable no-outline q-btn--standard q-btn--rectangle q-btn--actionable q-focusable q-hoverable q-btn--no-uppercase primary-btn"
+                                    tabindex="0" type="submit" style="width: 100%;"><span class="q-focus-helper"></span><span
                                         class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><span
-                                            class="block">Sign In</span></span></button><button
-                                    class="q-btn q-btn-item non-selectable no-outline q-btn--flat q-btn--rectangle text-primary q-btn--actionable q-focusable q-hoverable q-ml-sm"
-                                    tabindex="0" type="reset"><span class="q-focus-helper"></span><span
-                                        class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><span
-                                            class="block">Cancel</span></span></button></div>
+                                            class="block">Login</span></span></button></div>
                         </form>
-                        <div class="q-mt-md flex justify-between"><a
-                                class="q-btn q-btn-item non-selectable no-outline q-btn--standard q-btn--rectangle bg-secondary text-white q-btn--actionable q-focusable q-hoverable"
-                                tabindex="0" href="/register"><span class="q-focus-helper"></span><span
+                        <div class="q-mt-lg q-mb-sm" style="font-size: 13px; text-align: center; color: white;"> Don’t have an account
+                            yet? </div>
+                        <div class="q-mt-md flex"><a
+                                class="q-btn q-btn-item non-selectable no-outline q-btn--standard q-btn--rectangle q-btn--actionable q-focusable q-hoverable q-btn--no-uppercase btn-secondary"
+                                tabindex="0" href="/register" style="width: 100%;"><span class="q-focus-helper"></span><span
                                     class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><span
-                                        class="block">Sign Up</span></span></a><a
-                                class="q-btn q-btn-item non-selectable no-outline q-btn--standard q-btn--rectangle bg-secondary text-white q-btn--actionable q-focusable q-hoverable"
-                                tabindex="0" href="/forgot-password"><span class="q-focus-helper"></span><span
-                                    class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><span
-                                        class="block">Forgot Password</span></span></a></div>
+                                        class="block">Sign Up</span></span></a></div>
+                        <p class="terms q-mt-lg flex" style="max-width: 325px;"> By logging in, I accept the TripTrax <a href="#"
+                                class="q-mx-xs">Terms of Service</a> and acknowledge the <a href="#" class="q-mx-xs"> Privacy
+                                Policy.</a></p>
                     </div>
                 </main>
             </div><!---->
@@ -175,6 +196,20 @@ background-color:#00376F;
             <div class="q-notifications__list q-notifications__list--center fixed column no-wrap flex-center"></div>
         </div>
     </div>
+
+    <script>// forEach method, could be shipped as part of an Object Literal/Module
+        let forEach = function (array, callback, scope) {
+            for (var i = 0; i < array.length; i++) {
+                callback.call(scope, i, array[i]); // passes back stuff we need
+            }
+        };
+        
+        // mdc_textFields:
+        let mdc_textFields = document.querySelectorAll('.mdc-text-field');
+        mdc_textFields.borderFillColor = UIColor.white;
+        forEach(mdc_textFields, function (index, value) {
+            return new mdc.textField.MDCTextField(value);
+        });</script>
 </body>
 
 </html>
